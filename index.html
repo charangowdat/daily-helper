@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Helper</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Mobile-first styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f6f8fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #222;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      width: 80%;
+      padding: 15px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      color: #fff;
+      background: #007bff;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #0056b3;
+    }
+
+    .worker {
+      background: #28a745;
+    }
+
+    .worker:hover {
+      background: #1e7e34;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Daily Helper</h1>
+  <p>Find or offer help in your area</p>
+
+  <button class="btn worker" onclick="window.location.href='pages/worker-signup.html'">I'm a Worker</button>
+  <button class="btn" onclick="window.location.href='pages/employer-signup.html'">I'm an Employer</button>
+
+</body>
+</html>
