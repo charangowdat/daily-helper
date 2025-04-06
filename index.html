@@ -6,7 +6,6 @@
   <title>Daily Helper</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Mobile-first styling */
     * {
       margin: 0;
       padding: 0;
@@ -15,7 +14,7 @@
     }
 
     body {
-      background: #f6f8fa;
+      background: #fdfdfd;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -25,14 +24,28 @@
       text-align: center;
     }
 
+    .logo {
+      width: 100px;
+      height: 100px;
+      background-color: #FFDE21;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #000;
+    }
+
     h1 {
       font-size: 2rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
       color: #222;
     }
 
     p {
-      color: #666;
+      color: #555;
       margin-bottom: 2rem;
     }
 
@@ -43,32 +56,27 @@
       border: none;
       border-radius: 8px;
       font-size: 1rem;
-      color: #fff;
-      background: #007bff;
+      font-weight: 600;
+      color: #000;
+      background: #FFDE21;
       cursor: pointer;
       transition: 0.3s ease;
     }
 
     .btn:hover {
-      background: #0056b3;
-    }
-
-    .worker {
-      background: #28a745;
-    }
-
-    .worker:hover {
-      background: #1e7e34;
+      background: #f4cd00;
     }
   </style>
 </head>
 <body>
 
-  <h1>Daily Helper</h1>
-  <p>Find or offer help in your area</p>
+  <div class="logo">DH</div>
 
-  <button class="btn worker" onclick="window.location.href='pages/worker-signup.html'">I'm a Worker</button>
-  <button class="btn" onclick="window.location.href='pages/employer-signup.html'">I'm an Employer</button>
+  <h1>Daily Helper</h1>
+  <p>Connecting daily workers & employers easily</p>
+
+  <button class="btn" onclick="window.location.href='pages/worker-signup.html'">I’m a Worker</button>
+  <button class="btn" onclick="window.location.href='pages/employer-signup.html'">I’m an Employer</button>
 
 </body>
 </html>
