@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employer Signup - Daily Helper</title>
+  <style>
+    body {
+      background: #fff;
+      padding: 20px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, select {
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #FFDE21;
+      border: none;
+      padding: 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #f4cd00;
+    }
+
+    .back {
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .back a {
+      text-decoration: none;
+      color: #007bff;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Employer Signup</h2>
+
+  <form>
+    <input type="text" placeholder="Full Name" required />
+    <input type="text" placeholder="Company/House Name (Optional)" />
+    <input type="text" placeholder="Address (Bangalore only)" required />
+    <input type="text" placeholder="Phone Number" required />
+    <input type="text" placeholder="Languages Spoken (e.g., Kannada, Hindi)" required />
+
+    <label>Looking for help in:</label>
+    <select required>
+      <option value="">-- Select --</option>
+      <option>Catering</option>
+      <option>Washing</option>
+      <option>Home Cleaning</option>
+      <option>Loading</option>
+      <option>Cooking</option>
+    </select>
+
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <div class="back">
+    <a href="../index.html">← Back to Home</a>
+  </div>
+
+</body>
+</html>
