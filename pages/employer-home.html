@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employer Dashboard - Daily Helper</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #FFDE21;
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 1.3rem;
+    }
+
+    .menu {
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .container {
+      padding: 20px;
+      padding-bottom: 80px; /* space for footer */
+    }
+
+    .search {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    input, select {
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .worker-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .worker-card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .worker-card h4 {
+      margin: 0 0 5px;
+    }
+
+    .worker-card p {
+      margin: 4px 0;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .worker-card button {
+      margin-top: 10px;
+      background-color: #FFDE21;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 60px;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #444;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Daily Helper</div>
+    <div class="menu">☰</div>
+  </header>
+
+  <div class="container">
+
+    <div class="search">
+      <input type="text" placeholder="Search by language (e.g. Kannada)" />
+      <select>
+        <option value="">Filter by work</option>
+        <option>Catering</option>
+        <option>Washing</option>
+        <option>Home Cleaning</option>
+        <option>Loading</option>
+        <option>Cooking</option>
+      </select>
+    </div>
+
+    <div class="worker-list">
+      <div class="worker-card">
+        <h4>Ravi Kumar</h4>
+        <p><strong>Work:</strong> Home Cleaning, Cooking</p>
+        <p><strong>Languages:</strong> Kannada, Hindi</p>
+        <p><strong>Experience:</strong> 3 years</p>
+        <button>Request</button>
+      </div>
+
+      <div class="worker-card">
+        <h4>Sunita Devi</h4>
+        <p><strong>Work:</strong> Washing, Catering</p>
+        <p><strong>Languages:</strong> Hindi, Tamil</p>
+        <p><strong>Experience:</strong> 2 years</p>
+        <button>Request</button>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <a href="#">🏠 Home</a>
+    <a href="#">👤 Profile</a>
+    <a href="#">🚪 Logout</a>
+  </footer>
+
+</body>
+</html>
